@@ -13,7 +13,7 @@ kv_namespaces = [
 ### WEB CLIENT VARIABLES
 # This must match your Logto login URL
 VITE_LOGTO_ENDPOINT = "https://id.floofbite.com"
-VITE_LOGTO_APPID = "" 
+VITE_LOGTO_APPID = "s2jft2lv1u3puwn4dme85" 
 VITE_LOGTO_CORE_RESOURCE = "https://id.floofbite.com/api"
 VITE_LOGTO_RESOURCES = '["https://id.floofbite.com/api"]'
 
