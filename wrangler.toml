@@ -1,0 +1,40 @@
+name = "logto-account-dashboard"
+compatibility_flags = [ "nodejs_compat" ]
+compatibility_date = "2024-03-04"
+pages_build_output_dir = "./dist"
+
+kv_namespaces = [
+    { binding = "MfaStatus", id = "" },
+    { binding = "LogtoAccessToken", id = "" },
+    { binding = "UsernameChangeTimelimit", id = "" }
+]
+
+[vars]
+### WEB CLIENT VARIABLES
+# This must match your Logto login URL
+VITE_LOGTO_ENDPOINT = "https://id.floofbite.com"
+VITE_LOGTO_APPID = "" 
+VITE_LOGTO_CORE_RESOURCE = "https://id.floofbite.com/api"
+VITE_LOGTO_RESOURCES = '["https://id.floofbite.com/api"]'
+
+## Extra endpoints
+# This tells the app it lives in the /account subfolder
+VITE_ROOT = "https://id.floofbite.com/account"
+VITE_MATOMO_ENDPOINT = ""
+VITE_MATOMO_SITE_ID = ""
+
+## Extra customisable options
+VITE_SUPPORT_EMAIL = "help@floofbite.com"
+VITE_LEGAL_URL = "https://go.floofbite.com/legal"
+
+### WORKER VARIABLES
+# These handle the server-side communication
+LOGTO_DOMAIN = "https://id.floofbite.com"
+LOGTO_DEFAULT_RESOURCE = "https://id.floofbite.com/api"
+
+# settings for avatar nsfw checking
+AVATAR_API = ""
+ENABLE_NSFW_CHECK = 1
+
+[placement]
+mode = "smart"
