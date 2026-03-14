@@ -1,4 +1,4 @@
-name = "logto-account-dashboard"
+name = "logto-uss"
 compatibility_flags = [ "nodejs_compat" ]
 compatibility_date = "2024-03-04"
 pages_build_output_dir = "./dist"
