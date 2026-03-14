@@ -15,7 +15,7 @@ kv_namespaces = [
 # the url of your logto service. if you are using logto cloud it may look like https://[your_tenant].logto.app
 VITE_LOGTO_ENDPOINT = "https://id.floofbite.com/"
 # the appid of your CLIENT SPA application
-VITE_LOGTO_APPID = "9yi5iaiw0l059dsu2z88g"
+VITE_LOGTO_APPID = "8whskrret5ce7wglrjz7w"
 # the logto core resource, do not change <= this is only temporary
 VITE_LOGTO_CORE_RESOURCE = "https://id.floofbite.com/api"
 # the resources the user should have access to use the dashboard. Should be in array format. e.g: '["https://id.floofbite.com/api", "https://myresouce.logto.app"]'
