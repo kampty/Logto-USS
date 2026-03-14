@@ -13,7 +13,7 @@ kv_namespaces = [
 ### WEB CLIENT VARIABLES
 ## All the required logto values
 # the url of your logto service. if you are using logto cloud it may look like https://[your_tenant].logto.app
-VITE_LOGTO_ENDPOINT = "https://id.floofbite.com/"
+VITE_LOGTO_ENDPOINT = "https://id.floofbite.com"
 # the appid of your CLIENT SPA application
 VITE_LOGTO_APPID = "9yi5iaiw0l059dsu2z88g"
 # the logto core resource, do not change <= this is only temporary
