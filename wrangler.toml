@@ -3,30 +3,49 @@ compatibility_flags = [ "nodejs_compat" ]
 compatibility_date = "2024-03-04"
 pages_build_output_dir = "./dist"
 
+kv_namespaces = [
+	{ binding = "MfaStatus", id = "" },
+	{ binding = "LogtoAccessToken", id = "" },
+	{ binding = "UsernameChangeTimelimit", id = "" }
+]
+
 [vars]
 ### WEB CLIENT VARIABLES
-# This must match your Logto login URL
-VITE_LOGTO_ENDPOINT = "https://id.floofbite.com"
-VITE_LOGTO_APPID = "s2jft2lv1u3puwn4dme85" 
-VITE_LOGTO_CORE_RESOURCE = "https://id.floofbite.com/api"
-VITE_LOGTO_RESOURCES = '["https://id.floofbite.com/api"]'
+## All the required logto values
+# the url of your logto service. if you are using logto cloud it may look like https://[your_tenant].logto.app
+VITE_LOGTO_ENDPOINT = Requried
+# the appid of your CLIENT SPA application
+VITE_LOGTO_APPID = Requried
+# the logto core resource, do not change <= this is only temporary
+VITE_LOGTO_CORE_RESOURCE = https://id.floofbite.com/api
+# the resources the user should have access to use the dashboard. Should be in array format. e.g: '["https://id.floofbite.com/api", "https://myresouce.logto.app"]'
+VITE_LOGTO_RESOURCES = '["https://id.floofbite.com/api"]' # <= do not change (temporary)
 
 ## Extra endpoints
-# This tells the app it lives in the /account subfolder
-VITE_ROOT = "https://logto-uss-60o.pages.dev"
-VITE_MATOMO_ENDPOINT = ""
-VITE_MATOMO_SITE_ID = ""
+# the url that the dashboard is served from
+VITE_ROOT = Required
+# the endpoint of a matomo installation. if omitted matomo tracking will be disabled
+VITE_MATOMO_ENDPOINT = Optional
+VITE_MATOMO_SITE_ID = Optional
 
 ## Extra customisable options
-VITE_SUPPORT_EMAIL = "help@floofbite.com"
-VITE_LEGAL_URL = "https://go.floofbite.com/legal"
+# the email in the footer of the dashboard
+VITE_SUPPORT_EMAIL = help@floofbite.com
+# the url that users can visit to view the privacy policy/terms of service of your brand. needs to be a full url
+VITE_LEGAL_URL = https://go.floofbite.com/legal
 
 ### WORKER VARIABLES
-# These handle the server-side communication
+## Required Logto values
+# THESE SHOULD NOT BE SET IN THE WRANGLER.TOML!!
+# Please set these values using the wrangler cli: https://developers.cloudflare.com/workers/wrangler/commands/#secret
+LOGTO_APP_ID = s2jft2lv1u3puwn4dme85 - Set via wrangler cli!
+LOGTO_APP_SECRET = Required - Set via wrangler cli!
+# the url of your logto service. if you are using logto cloud it may look like https://[your_tenant].logto.app
 LOGTO_DOMAIN = "https://id.floofbite.com"
+# the default resource of your logto application. If you are on a self hosted instance it will be "https://id.floofbite.com/api", if you are using logto cloud it will look someting like "https://v12345.logto.app/api"
 LOGTO_DEFAULT_RESOURCE = "https://id.floofbite.com/api"
 
-# settings for avatar nsfw checking
+# settings for avatar nsfw checking. use in conjunction with https://github.com/t2vee/nsfwjs-avatar-service
 AVATAR_API = ""
 ENABLE_NSFW_CHECK = 1
 
