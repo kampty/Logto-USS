@@ -23,7 +23,7 @@ VITE_LOGTO_RESOURCES = '["https://id.floofbite.com/api"]' # <= do not change (te
 
 ## Extra endpoints
 # the url that the dashboard is served from
-VITE_ROOT = "https://logto-uss-60o.pages.dev/"
+VITE_ROOT = "https://logto-uss-60o.pages.dev"
 # the endpoint of a matomo installation. if omitted matomo tracking will be disabled
 VITE_MATOMO_ENDPOINT = "Optional"
 VITE_MATOMO_SITE_ID = "Optional"
