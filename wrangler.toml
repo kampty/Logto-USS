@@ -23,10 +23,10 @@ VITE_LOGTO_RESOURCES = '["https://id.floofbite.com/api"]' # <= do not change (te
 
 ## Extra endpoints
 # the url that the dashboard is served from
-VITE_ROOT = Required
+VITE_ROOT = "Required"
 # the endpoint of a matomo installation. if omitted matomo tracking will be disabled
-VITE_MATOMO_ENDPOINT = Optional
-VITE_MATOMO_SITE_ID = Optional
+VITE_MATOMO_ENDPOINT = "Optional"
+VITE_MATOMO_SITE_ID = "Optional"
 
 ## Extra customisable options
 # the email in the footer of the dashboard
