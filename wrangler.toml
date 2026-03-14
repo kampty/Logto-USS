@@ -13,11 +13,11 @@ kv_namespaces = [
 ### WEB CLIENT VARIABLES
 ## All the required logto values
 # the url of your logto service. if you are using logto cloud it may look like https://[your_tenant].logto.app
-VITE_LOGTO_ENDPOINT = https://id.floofbite.com
+VITE_LOGTO_ENDPOINT = "https://id.floofbite.com/"
 # the appid of your CLIENT SPA application
-VITE_LOGTO_APPID = 9yi5iaiw0l059dsu2z88g
+VITE_LOGTO_APPID = "9yi5iaiw0l059dsu2z88g"
 # the logto core resource, do not change <= this is only temporary
-VITE_LOGTO_CORE_RESOURCE = https://id.floofbite.com/api
+VITE_LOGTO_CORE_RESOURCE = "https://id.floofbite.com/api"
 # the resources the user should have access to use the dashboard. Should be in array format. e.g: '["https://id.floofbite.com/api", "https://myresouce.logto.app"]'
 VITE_LOGTO_RESOURCES = '["https://id.floofbite.com/api"]' # <= do not change (temporary)
 
@@ -30,17 +30,15 @@ VITE_MATOMO_SITE_ID = Optional
 
 ## Extra customisable options
 # the email in the footer of the dashboard
-VITE_SUPPORT_EMAIL = help@floofbite.com
+VITE_SUPPORT_EMAIL = "help@floofbite.com"
 # the url that users can visit to view the privacy policy/terms of service of your brand. needs to be a full url
-VITE_LEGAL_URL = https://go.floofbite.com/legal
-
-LOGTO_OIDC_AUTH_METHOD = "client_secret_basic"
+VITE_LEGAL_URL = "https://go.floofbite.com/legal"
 
 ### WORKER VARIABLES
 ## Required Logto values
 # THESE SHOULD NOT BE SET IN THE WRANGLER.TOML!!
 # Please set these values using the wrangler cli: https://developers.cloudflare.com/workers/wrangler/commands/#secret
-LOGTO_APP_ID = 9yi5iaiw0l059dsu2z88g
+LOGTO_APP_ID = "9yi5iaiw0l059dsu2z88g"
 # LOGTO_APP_SECRET = Required - Set via wrangler cli!
 # the url of your logto service. if you are using logto cloud it may look like https://[your_tenant].logto.app
 LOGTO_DOMAIN = "https://id.floofbite.com"
