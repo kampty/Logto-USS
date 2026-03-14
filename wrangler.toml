@@ -3,11 +3,11 @@ compatibility_flags = [ "nodejs_compat" ]
 compatibility_date = "2024-03-04"
 pages_build_output_dir = "./dist"
 
-#kv_namespaces = [
-#	{ binding = "MfaStatus", id = "" },
-#	{ binding = "LogtoAccessToken", id = "" },
-#	{ binding = "UsernameChangeTimelimit", id = "" }
-#]
+kv_namespaces = [
+	{ binding = "MfaStatus", id = "5f5b49022d1c4961bb98e4240ce84194" },
+	{ binding = "LogtoAccessToken", id = "562b8b0476c64690be669426e3dace9f" },
+	{ binding = "UsernameChangeTimelimit", id = "789713f8e36b4fafb537e516ec70c35b" }
+]
 
 [vars]
 ### WEB CLIENT VARIABLES
