@@ -38,7 +38,7 @@ VITE_LEGAL_URL = "https://go.floofbite.com/legal"
 ## Required Logto values
 # THESE SHOULD NOT BE SET IN THE WRANGLER.TOML!!
 # Please set these values using the wrangler cli: https://developers.cloudflare.com/workers/wrangler/commands/#secret
-#LOGTO_APP_ID = "9yi5iaiw0l059dsu2z88g"
+# LOGTO_APP_ID = Required
 # LOGTO_APP_SECRET = Required - Set via wrangler cli!
 # the url of your logto service. if you are using logto cloud it may look like https://[your_tenant].logto.app
 LOGTO_DOMAIN = "https://id.floofbite.com"
