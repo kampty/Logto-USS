@@ -28,6 +28,8 @@ VITE_ROOT = "https://logto-uss-60o.pages.dev"
 VITE_MATOMO_ENDPOINT = "Optional"
 VITE_MATOMO_SITE_ID = "Optional"
 
+DEBUG_MODE = "true"
+
 ## Extra customisable options
 # the email in the footer of the dashboard
 VITE_SUPPORT_EMAIL = "help@floofbite.com"
